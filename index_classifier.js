@@ -21,17 +21,17 @@ async function predict(){
         
         switch(classId){
 		    case 0:
-			 predictionText = "Angular leaf spot(0)";
-            break;
+			    predictionText = "Angular leaf spot(0)";
+                break;
 		    case 1:
-			 predictionText = "Bean rust(1)";
-			break;
+			     predictionText = "Bean rust(1)";
+			     break;
 		    case 2:
-			 predictionText = "Healthy(2)";
-			break;
+			     predictionText = "Healthy(2)";
+			     break;
         }
-            document.getElementById("prediction").innerText = predictionText;
-            predictedClass.dispose();
+        document.getElementById("prediction").innerText = predictionText;
+        predictedClass.dispose();
     }
 }
     
@@ -42,8 +42,8 @@ function startPredicting(){
 
 
 async function init(){
-	   model_beans = await loadBeans();
-       console.log(model_beans.summary());
+    model_beans = await loadBeans();
+    console.log(model_beans.summary());
 }
 
 init();
