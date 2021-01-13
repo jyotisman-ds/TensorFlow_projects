@@ -21,7 +21,8 @@ async function predict()
         });
         const classId = (await predictedClass.data())[0];
         
-        switch(classId){
+        switch(classId)
+        {
 		    case 0:
                 predictionText = "Angular leaf spot(0)";
                 break;
