@@ -21,8 +21,8 @@ async function predict(){
         
         switch(classId){
 		    case 0:
-			    predictionText = "Angular leaf spot(0)";
-                break;
+			     predictionText = "Angular leaf spot(0)";
+                 break;
 		    case 1:
 			     predictionText = "Bean rust(1)";
 			     break;
