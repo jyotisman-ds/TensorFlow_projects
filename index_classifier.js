@@ -13,13 +13,13 @@ async function loadBeans() {
 async function predict(){
 
     if (isPredicting) {
-            const predictedClass = tf.tidy(() => {
-            const predictions = model_beans.predict(tensorFeature);
-            return predictions.as1D().argMax();
-            });
-            const classId = (await predictedClass.data())[0];
+        const predictedClass = tf.tidy(() => {
+        const predictions = model_beans.predict(tensorFeature);
+        return predictions.as1D().argMax();
+    });
+        const classId = (await predictedClass.data())[0];
         
-            switch(classId){
+        switch(classId){
 		    case 0:
 			 predictionText = "Angular leaf spot(0)";
             break;
@@ -29,9 +29,8 @@ async function predict(){
 		    case 2:
 			 predictionText = "Healthy(2)";
 			break;
-            }
+        }
             document.getElementById("prediction").innerText = predictionText;
-    
             predictedClass.dispose();
     }
 }
