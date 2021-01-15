@@ -6,9 +6,9 @@
 
 ## List of Projects
 
-### [Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_fullCalssifier.ipynb)
+- ### [Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_fullCalssifier.ipynb)
 
-#### Model Demo 
+#### Model Demo
 This model learns the Beans images [dataset](https://www.tensorflow.org/datasets/catalog/beans) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline.
 
     ![Browser Model](/images/PredictingBeans.png)
@@ -17,14 +17,7 @@ This model learns the Beans images [dataset](https://www.tensorflow.org/datasets
 The trained model is deployed on to the browser using tensorflow.js. It can take a picture of a bean leaf and predict whether it belongs to one of the two diseased categories - bean_rust or angular leaf spot or id its healthy.  
 
 #### Technical Aspects
-- The model was trained in Google Colab with GPU settings. The dataset is already sub-divided into train, validation and test datasets and data loading is as simple as the following
-```python
-import tensorflow_datasets as tfds
-beans, info = tfds.load('beans', with_info=True, as_supervised=True)
-train_ds = beans['train']
-valid_ds = beans['validation']
-test_ds = beans['test']
-```
+- The model was trained in Google Colab with GPU settings. The dataset is already sub-divided into train, validation and test datasets and data loading is extremely simplified with the tensorflow_datatsets module.
 - A deep learning model is implemented with a Keras Sequential layer consisting of Convolutional, Maxpooling and Dense Layers.
 - Random augmentations like flipping, rotation and zoom were implemented. This provided more variety to the training data while also preventing overfitting.
 - A Dropout layer is also used to further prevent overfitting.
@@ -35,5 +28,8 @@ saved_model_path = "./{}.h5".format(int(time.time()))
 model.save(saved_model_path)
 !tensorflowjs_converter --input_format=keras {saved_model_path} ./
 ```
+
+#### Credits
+A huge shoutout to the Deep Learning coursera community especially their [Deep Learning](https://www.coursera.org/specializations/deep-learning) and Tensorflow [training](https://www.coursera.org/professional-certificates/tensorflow-in-practice) and [deployment](https://www.coursera.org/specializations/tensorflow-data-and-deployment) specialization courses.
 
 _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
