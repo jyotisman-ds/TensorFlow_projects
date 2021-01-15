@@ -1,8 +1,12 @@
 # TensorFlow Projects
 
 ## Table of Content
+ * [General Overview](#overview)
  * [List of Projects](#projects)
+ * [Credits](#credits)
 
+## General Overview
+This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
 
 ## List of Projects
 
@@ -14,7 +18,7 @@ This model learns the Beans images [dataset](https://www.tensorflow.org/datasets
 ![Browser Model](/images/PredictingBeans.png)
 
 #### Overview
-The trained model is deployed on to the browser using tensorflow.js. It can take a picture of a bean leaf and predict whether it belongs to one of the two diseased categories - bean_rust or angular leaf spot or id its healthy.  
+The trained model is deployed on to the browser using tensorflow.js. It can take a picture of a bean leaf and predict whether it belongs to one of the two diseased categories - bean_rust or angular leaf spot or if its healthy.  
 
 #### Technical Aspects
 - The model was trained in Google Colab with GPU settings. The dataset is already sub-divided into train, validation and test datasets and data loading is extremely simplified with the tensorflow_datatsets module.
@@ -28,8 +32,7 @@ saved_model_path = "./{}.h5".format(int(time.time()))
 model.save(saved_model_path)
 !tensorflowjs_converter --input_format=keras {saved_model_path} ./
 ```
-
-#### Credits
-A huge shoutout to the Deep Learning coursera community especially their [Deep Learning](https://www.coursera.org/specializations/deep-learning) and Tensorflow [training](https://www.coursera.org/professional-certificates/tensorflow-in-practice) and [deployment](https://www.coursera.org/specializations/tensorflow-data-and-deployment) specialization courses.
-
 _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
+
+## Credits
+A huge shoutout to the Deep Learning coursera community especially their [Deep Learning](https://www.coursera.org/specializations/deep-learning) and Tensorflow [training](https://www.coursera.org/professional-certificates/tensorflow-in-practice) and [deployment](https://www.coursera.org/specializations/tensorflow-data-and-deployment) specialization courses.
