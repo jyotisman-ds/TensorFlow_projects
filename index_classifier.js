@@ -5,17 +5,18 @@ var loadFile = function(event) {
     image.src = URL.createObjectURL(event.target.files[0]);
     image.onload = () => {
     tensorFeature = tf.browser.fromPixels(image).resizeBilinear([150,150]).expandDims();
-    }
+		tensorFeature = tensorFeature.div(255.0);
+		}
 };
 
 let isPredicting = false;
-    
+
 async function loadBeans() {
     const MODEL_URL = 'http://127.0.0.1:8887/model.json';
     const model_beans = await tf.loadLayersModel(MODEL_URL);
     return tf.model({inputs: model_beans.inputs, outputs: model_beans.output});
 }
-    
+
 async function predict(){
 
     if (isPredicting) {
@@ -24,7 +25,7 @@ async function predict(){
             return predictions.as1D().argMax();
             });
             const classId = (await predictedClass.data())[0];
-        
+
             switch(classId){
 		    case 0:
 			 predictionText = "Angular leaf spot(0)";
@@ -37,11 +38,11 @@ async function predict(){
 			break;
             }
             document.getElementById("prediction").innerText = predictionText;
-    
+
             predictedClass.dispose();
     }
 }
-    
+
 function startPredicting(){
 	isPredicting = true;
 	predict();
