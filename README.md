@@ -2,8 +2,8 @@
 
 - [General Overview](#overview)
 - [List of Projects](#projects)
-  * [Beans Classifier](#beansclassifier)
-  * [Dog Breed Classifier](#dogclassifier)
+  * [[Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)](#beansclassifier)
+  * [[Dog Breed Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)](#dogclassifier)
 - [Credits](#credits)
 
 ## General Overview
