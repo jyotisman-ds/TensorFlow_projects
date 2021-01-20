@@ -9,9 +9,9 @@
 ## General Overview
 This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
 
-## List_of_Projects
+## List of Projects
 
-### Beans_Classifier
+### Beans Classifier
 
 **Notebook** : [beans_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)
 
@@ -37,7 +37,7 @@ model.save(saved_model_path)
 ```
 _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
-### Dog_Breed_Classifier
+### Dog Breed Classifier
 
 **Notebook** : [dog_breed_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
 
@@ -69,9 +69,9 @@ As with the beans classifier, we deploy the model onto the local browser using t
 6       0.95      0.93      0.94        45
 7       0.84      0.91      0.88        35
 8       0.89      0.71      0.79        34
-                  .
-                  .
-                  .
+                        .
+                        .
+                        .
 ```
 
 - We also plotted a confusion matrix to quickly see how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
