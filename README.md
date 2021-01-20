@@ -10,7 +10,7 @@ This repo is a compilation of some of the deep learning projects that I worked o
 
 ## List of Projects
 
-### [Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_fullCalssifier.ipynb)
+### [Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)
 
 #### Model Demo
 This model learns the Beans images [dataset](https://www.tensorflow.org/datasets/catalog/beans) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline.
