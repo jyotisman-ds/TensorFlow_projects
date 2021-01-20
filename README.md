@@ -51,28 +51,20 @@ As with the beans classifier, we deploy the model onto the local browser using t
 - Finally, we also use the classification_report module from the sklearn library to look at some of the other metrics like Recall and precision. Even though this problem does not really require investigating false negatives or false positives, its still an interesting report to look through given the huge number of labels.
 
 ```
-                precision    recall  f1-score   support
+      precision   recall   f1-score   support
 
-           0       0.86      0.67      0.75        27
-           1       0.92      0.92      0.92        39
-           2       0.91      0.89      0.90        80
-           3       0.93      0.81      0.86        31
-           4       0.88      0.88      0.88        49
-           5       0.90      0.94      0.92        49
-           6       0.95      0.93      0.94        45
-           7       0.84      0.91      0.88        35
-           8       0.89      0.71      0.79        34
-           9       1.00      0.97      0.99        73
-          10       0.93      0.97      0.95        38
-          11       0.77      0.82      0.80        40
-          12       0.97      0.92      0.95        39
-          13       0.93      0.85      0.89        33
-          14       0.84      0.90      0.87        29
-          15       0.58      0.68      0.62        22
-          16       0.75      0.62      0.68        29
-          .
-          .
-          .
+0       0.86      0.67      0.75        27
+1       0.92      0.92      0.92        39
+2       0.91      0.89      0.90        80
+3       0.93      0.81      0.86        31
+4       0.88      0.88      0.88        49
+5       0.90      0.94      0.92        49
+6       0.95      0.93      0.94        45
+7       0.84      0.91      0.88        35
+8       0.89      0.71      0.79        34
+                  .
+                  .
+                  .
 ```
 
 _Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
