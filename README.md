@@ -50,7 +50,7 @@ _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, ja
 **Notebook** : [dog_breed_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
 
 #### Model Demo
-This model learns the dog images [dataset](https://www.tensorflow.org/datasets/catalog/stanford_dogs) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline. Since this is a complicated dataset, we use transfer learning to train our model here. I use the InceptionV3 model with the default 'imagenet' weights. Inception is a highly optimized model for image classification benchmarked against the famous imagenet dataset. I set the last few layers of the model to be trainable for my purposes.
+This model learns the [stanford_dogs](https://www.tensorflow.org/datasets/catalog/stanford_dogs) dataset from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline. Since this is a complicated dataset, we use transfer learning to train our model here. I use the InceptionV3 model with the default 'imagenet' weights. Inception is a highly optimized model for image classification benchmarked against the famous imagenet dataset. I set the last few layers of the model to be trainable for my purposes.
 
 ![Browser Model](/images/dog_breed.png)
 
