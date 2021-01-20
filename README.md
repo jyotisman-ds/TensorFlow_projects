@@ -50,7 +50,7 @@ As with the beans classifier, we deploy the model onto the local browser using t
 - An important aspect of the training is also to use the bounding boxes that is provided with the tensorflow dataset. So the image is first cropped to the bounding box dimensions provided and then later resized to the common dimension of (224, 224, 3) for training.
 - Finally, we also use the classification_report module from the sklearn library to look at some of the other metrics like Recall and precision. Even though this problem does not really require investigating false negatives or false positives, its still an interesting report to look through given the huge number of labels.
 
-```bash
+```
                 precision    recall  f1-score   support
 
            0       0.86      0.67      0.75        27
