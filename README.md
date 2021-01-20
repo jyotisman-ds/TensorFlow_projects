@@ -9,7 +9,7 @@
 ## General_Overview
 This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
 
-## List of Projects
+## List_of_Projects
 
 ### Beans_Classifier
 
