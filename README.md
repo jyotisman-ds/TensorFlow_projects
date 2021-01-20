@@ -2,8 +2,8 @@
 
 - [General Overview](#genoverview)
 - [List of Projects](#list_of_projects)
-  + [Beans Classifier](#beans_classifier)
-  + [Dog Breed Classifier](#dog_breed_classifier)
+  * [Beans Classifier](#beans_classifier)
+  * [Dog Breed Classifier](#dog_breed_classifier)
 - [Credits](#credits)
 
 ## General Overview
