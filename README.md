@@ -41,6 +41,8 @@ This model learns the dog images [dataset](https://www.tensorflow.org/datasets/c
 
 ![Browser Model](/images/dog_breed.png)
 
+Image credits : https://dogtime.com/dog-breeds/pekingese#/slide/1
+
 #### Overview
 As with the beans classifier, we deploy the model onto the local browser using tensorflow.js. It consists of 120 classes of dog breeds with every breed consisting of around 150 images on an average. We have 12000 training images and we further divide the provided test dataset into a validation and a test dataset.
 
