@@ -13,7 +13,9 @@ This repo is a compilation of some of the deep learning projects that I worked o
 2. (only for Google Chrome)Add the [web server](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) for Chrome extension to Google Chrome.
 3. Point to the downloaded model folder from step 1 in the web server app and click on the web server URL link.
 4. Click on the html file.
-5. Finally, remember to activate the developer tools option from the chrome menu to look at the console logs if interested. 
+5. Finally, remember to activate the developer tools option from the chrome menu to look at the console logs if interested.
+
+Now, you can upload your own images and have fun!
 
 ## List of Projects
 
