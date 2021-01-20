@@ -3,6 +3,8 @@
 ## Table of Content
  * [General Overview](#overview)
  * [List of Projects](#projects)
+    * [Beans Classifier](#beansclassifier)
+    * [Dog Breed Classifier](#dogclassifier)
  * [Credits](#credits)
 
 ## General Overview
