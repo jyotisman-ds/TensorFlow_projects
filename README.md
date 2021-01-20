@@ -1,10 +1,9 @@
 # TensorFlow Projects
 
-- [General Overview](#overview)
-- [List of Projects](#projects)
-  * [[Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)](#beansclassifier)
-  * [[Dog Breed Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)](#dogclassifier)
-- [Credits](#credits)
+## Table of Content
+ * [General Overview](#overview)
+ * [List of Projects](#projects)
+ * [Credits](#credits)
 
 ## General Overview
 This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
