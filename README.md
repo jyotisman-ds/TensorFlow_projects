@@ -1,17 +1,17 @@
 # TensorFlow Projects
 
-- [General Overview](#generaloverview)
-- [List of Projects](#listofprojects)
-  * [Beans Classifier](#beansclassifier)
-  * [Dog Breed Classifier](#dogbreedclassifier)
+- [General_Overview](#general_overview)
+- [List_of_Projects](#list_of_projects)
+  * [Beans_Classifier](#beans_classifier)
+  * [Dog_Breed_Classifier](#dog_breed_classifier)
 - [Credits](#credits)
 
-## General Overview
+## General_Overview
 This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
 
 ## List of Projects
 
-### Beans Classifier
+### Beans_Classifier
 
 **Notebook** : [beans_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)
 
@@ -37,7 +37,7 @@ model.save(saved_model_path)
 ```
 _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
-### Dog Breed Classifier
+### Dog_Breed_Classifier
 
 **Notebook** : [dog_breed_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
 
