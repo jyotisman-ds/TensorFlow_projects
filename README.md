@@ -3,6 +3,8 @@
 ## Table of Content
  * [General Overview](#overview)
  * [List of Projects](#projects)
+    + [Beans Classifier](#beans_classifer)
+    + [Dog Breed Classifier](#dog_classifier)
  * [Credits](#credits)
 
 ## General Overview
@@ -10,7 +12,9 @@ This repo is a compilation of some of the deep learning projects that I worked o
 
 ## List of Projects
 
-### [Beans Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)
+### Beans Classifier
+
+**Notebook** : [beans_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Beans_Classifier/Beans_fullCalssifier.ipynb)
 
 #### Model Demo
 This model learns the Beans images [dataset](https://www.tensorflow.org/datasets/catalog/beans) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline.
@@ -34,7 +38,9 @@ model.save(saved_model_path)
 ```
 _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
-### [Dog Breed Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
+### Dog Breed Classifier
+
+**Notebook** : [dog_breed_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
 
 #### Model Demo
 This model learns the dog images [dataset](https://www.tensorflow.org/datasets/catalog/stanford_dogs) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline.
