@@ -1,9 +1,9 @@
 # TensorFlow Projects
 
 - [General Overview](#general-overview)
-- [List_of_Projects](#list_of_projects)
-  * [Beans_Classifier](#beans_classifier)
-  * [Dog_Breed_Classifier](#dog_breed_classifier)
+- [List of Projects](#list-of-projects)
+  * [Beans Classifier](#beans-classifier)
+  * [Dog Breed Classifier](#dog-breed-classifier)
 - [Credits](#credits)
 
 ## General Overview
