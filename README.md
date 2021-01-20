@@ -47,7 +47,7 @@ As with the beans classifier, we deploy the model onto the local browser using t
 #### Technical Aspects
 - This is more or less the same as the beans classifier.
 - The additional thing that we do here is to interleave the training dataset and optimize the data reading/extraction process.
-- An important aspect of the training is also to use the bounding boxes that is provided with the tensorflow dataset. So the image is first cropped to the bounding box dimensions provided and then later resized to the common dimension of (224, 224, 3) for training.
+- An important aspect of the training is also to use the bounding boxes that is provided with the tensorflow dataset. So the image is first cropped to the bounding box dimensions provided and then later resized to the common dimension of (240, 240, 3) for training (This is what the browser model - model.json is trained with even though the notebook shows (224,224,3). Colab runs into memory issues for a larger image size).
 - Finally, we also use the classification_report module from the sklearn library to look at some of the other metrics like Recall and precision. Even though this problem does not really require investigating false negatives or false positives, its still an interesting report to look through given the huge number of labels.
 
 ```
@@ -66,6 +66,8 @@ As with the beans classifier, we deploy the model onto the local browser using t
                   .
                   .
 ```
+
+- We also plotted a confusion matrix to quickly see how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
 
 _Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
