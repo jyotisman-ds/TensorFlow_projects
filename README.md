@@ -42,7 +42,7 @@ _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, ja
 **Notebook** : [dog_breed_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
 
 #### Model Demo
-This model learns the dog images [dataset](https://www.tensorflow.org/datasets/catalog/stanford_dogs) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline.
+This model learns the dog images [dataset](https://www.tensorflow.org/datasets/catalog/stanford_dogs) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline. Since this is a complicated dataset, we use transfer learning to train our model here. I use the InceptionV3 model with the default 'imagenet' weights. Inception is a highly optimized model for image classification benchmarked against the famous imagenet dataset. I set the last few layers of the model to be trainable for my purposes.
 
 ![Browser Model](/images/dog_breed.png)
 
@@ -53,9 +53,9 @@ As with the beans classifier, we deploy the model onto the local browser using t
 
 #### Technical Aspects
 - This is more or less the same as the beans classifier.
-- The additional thing that we do here is to interleave the training dataset and optimize the data reading/extraction process.
+- The additional thing that I do here is to interleave the training dataset to optimize the data reading/extraction process.
 - An important aspect of the training is also to use the bounding boxes that is provided with the tensorflow dataset. So the image is first cropped to the bounding box dimensions provided and then later resized to the common dimension of (240, 240, 3) for training (This is what the browser model - model.json is trained with even though the notebook shows (224,224,3). Colab runs into memory issues for a larger image size).
-- Finally, we also use the classification_report module from the sklearn library to look at some of the other metrics like Recall and precision. Even though this problem does not really require investigating false negatives or false positives, its still an interesting report to look through given the huge number of labels.
+- The classification_report module from the sklearn library is also used to look at some of the other metrics like Recall and precision. Even though this problem does not really require investigating false negatives or false positives, its still an interesting statistical summary to look through given the huge number of labels.
 
 ```
       precision   recall   f1-score   support
@@ -74,7 +74,7 @@ As with the beans classifier, we deploy the model onto the local browser using t
                         .
 ```
 
-- We also plotted a confusion matrix to quickly see how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
+- Finally, a confusion matrix is plotted to quick visual summary of how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
 
 _Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
