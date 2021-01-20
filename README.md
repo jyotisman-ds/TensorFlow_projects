@@ -34,5 +34,48 @@ model.save(saved_model_path)
 ```
 _Tools : Python, Tensorflow, Keras, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
+### [Dog Breed Classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Dog_breed_classifier/Dog_breed_classifier_optimized.ipynb)
+
+#### Model Demo
+This model learns the dog images [dataset](https://www.tensorflow.org/datasets/catalog/stanford_dogs) from tensorflow datasets. The images are first processed through an augmentation pipeline before being fed into  a tf.data pipeline.
+
+![Browser Model](/images/dog_breed.png)
+
+#### Overview
+As with the beans classifier, we deploy the model onto the local browser using tensorflow.js. It consists of 120 classes of dog breeds with every breed consisting of around 150 images on an average. We have 12000 training images and we further divide the provided test dataset into a validation and a test dataset.
+
+#### Technical Aspects
+- This is more or less the same as the beans classifier.
+- The additional thing that we do here is to interleave the training dataset and optimize the data reading/extraction process.
+- An important aspect of the training is also to use the bounding boxes that is provided with the tensorflow dataset. So the image is first cropped to the bounding box dimensions provided and then later resized to the common dimension of (224, 224, 3) for training.
+- Finally, we also use the classification_report module from the sklearn library to look at some of the other metrics like Recall and precision. Even though this problem does not really require investigating false negatives or false positives, its still an interesting report to look through given the huge number of labels.
+
+```bash
+                precision    recall  f1-score   support
+
+           0       0.86      0.67      0.75        27
+           1       0.92      0.92      0.92        39
+           2       0.91      0.89      0.90        80
+           3       0.93      0.81      0.86        31
+           4       0.88      0.88      0.88        49
+           5       0.90      0.94      0.92        49
+           6       0.95      0.93      0.94        45
+           7       0.84      0.91      0.88        35
+           8       0.89      0.71      0.79        34
+           9       1.00      0.97      0.99        73
+          10       0.93      0.97      0.95        38
+          11       0.77      0.82      0.80        40
+          12       0.97      0.92      0.95        39
+          13       0.93      0.85      0.89        33
+          14       0.84      0.90      0.87        29
+          15       0.58      0.68      0.62        22
+          16       0.75      0.62      0.68        29
+          .
+          .
+          .
+```
+
+_Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
+
 ## Credits
 A huge shoutout to the Deep Learning coursera community especially their [Deep Learning](https://www.coursera.org/specializations/deep-learning) and Tensorflow [training](https://www.coursera.org/professional-certificates/tensorflow-in-practice) and [deployment](https://www.coursera.org/specializations/tensorflow-data-and-deployment) specialization courses.
