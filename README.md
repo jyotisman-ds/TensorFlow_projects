@@ -7,7 +7,13 @@
 - [Credits](#credits)
 
 ## General Overview
-This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
+This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast. Anyone interested in trying out these models in their local browser can try the following :
+
+1. Download the model folder you want to try.
+2. (only for Google Chrome)Add the [web server](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) for Chrome extension to Google Chrome.
+3. Point to the downloaded model folder from step 1 in the web server app and click on the web server URL link.
+4. Click on the html file.
+5. Finally, remember to activate the developer tools option from the chrome menu to look at the console logs if interested. 
 
 ## List of Projects
 
