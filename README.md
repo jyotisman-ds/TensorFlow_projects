@@ -1,10 +1,10 @@
-# TensorFlow Projects
-
 - [General Overview](#genoverview)
 - [List of Projects](#list_of_projects)
   * [Beans Classifier](#beans_classifier)
   * [Dog Breed Classifier](#dog_breed_classifier)
 - [Credits](#credits)
+
+# TensorFlow Projects
 
 ## General Overview
 This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast.
