@@ -82,7 +82,7 @@ As with the beans classifier, we deploy the model onto the local browser using t
                         .
 ```
 
-- Finally, a confusion matrix is plotted to quick visual summary of how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
+- Finally, a confusion matrix is plotted to get a quick visual summary of how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
 
 _Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
 
