@@ -4,6 +4,7 @@
 - [List of Projects](#list-of-projects)
   * [Beans Classifier](#beans-classifier)
   * [Dog Breed Classifier](#dog-breed-classifier)
+  * [Sentiment Classifier](#sentiment-classifier)
 - [Credits](#credits)
 
 ## General Overview
@@ -85,6 +86,36 @@ As with the beans classifier, we deploy the model onto the local browser using t
 - Finally, a confusion matrix is plotted to get a quick visual summary of how the classifier does on unseen data. The brightly lit diagonal justifies the ~85% accuracy seen before.  
 
 _Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js, html, javascript, Matplotlib, Google Colab_
+
+### Sentiment Classifier
+
+**Notebook** : [beans_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Sentiment_Classifier/sentiment_classifier.ipynb)
+
+#### Model Demo
+
+This model learns the [yelp_polarity_reviews](https://www.tensorflow.org/datasets/catalog/yelp_polarity_reviews) dataset from tensorflow datasets. This is a simple text classifier with 1D convolutional and global average pooling layers.
+
+#### Overview
+
+The dataset is significantly huge with close to 600,000 training and around 40,000 test examples. As usual, I split the test set into a validation and test set. It's a binary classifier with review polarities labelled as a negative '0' label and a positive '1' label.
+
+#### Technical Aspects
+
+- Data preprocessing included removing common 'stopwords' from all the splits. Other common preprocessing steps for text datasets were taken care of by the TextVectorization layer which limits the max_length of the reviews and also pads them whenever necessary.
+
+```python
+
+stopwords = [ "a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "could", "did", "do", "does", "doing", "down", "during", "each", "few", "for", "from", "further", "had", "has", "have", "having", "he", "he'd", "he'll", "he's", "her", "here", "here's", "hers", "herself", "him", "himself", "his", "how", "how's", "i", "i'd", "i'll", "i'm", "i've", "if", "in", "into", "is", "it", "it's", "its", "itself", "let's", "me", "more", "most", "my", "myself", "nor", "of", "on", "once", "only", "or", "other", "ought", "our", "ours", "ourselves", "out", "over", "own", "same", "she", "she'd", "she'll", "she's", "should", "so", "some", "such", "than", "that", "that's", "the", "their", "theirs", "them", "themselves", "then", "there", "there's", "these", "they", "they'd", "they'll", "they're", "they've", "this", "those", "through", "to", "too", "under", "until", "up", "very", "was", "we", "we'd", "we'll", "we're", "we've", "were", "what", "what's", "when", "when's", "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with", "would", "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves" ]
+
+```
+
+- The TextVectorization layer more importantly also creates a Tokenizer of 10,000 most common words from the corpus in the training dataset. This layer also indexes these tokens which can then be used to vectorize the texts in all the splits. This layer can be used just as separate preprocessing step or also as a layer directly for the model given that it is inherited from the keras.layers class.
+
+- For word embeddings, we create a embedding layer as part of the model itself with 64 dimension embeddings to be learned during training.  
+
+- With a modest Conv1D and GlobalAveragePooling1D() layer, an accuracy of ~ 94% is achieved. One can further increase this with the inclusion of a TF-IDF vectorizer which accounts for the relative importance of words in the corpus. Or one can also look at some pre-trained word embeddings like [Glove](https://nlp.stanford.edu/projects/glove/).
+
+- A straightforward next step would be to play with sequence layers cause after all texts are meaningful only if they have a sequential structure. One can add a few LSTM or GRU layers to check that. It probably wouldn't matter a lot for this task where few words positive/negative words can map to the label. But for tasks like text generation, language translation, it's a must.    
 
 ## Credits
 A huge shoutout to the Deep Learning coursera community especially their [Deep Learning](https://www.coursera.org/specializations/deep-learning) and Tensorflow [training](https://www.coursera.org/professional-certificates/tensorflow-in-practice) and [deployment](https://www.coursera.org/specializations/tensorflow-data-and-deployment) specialization courses.
