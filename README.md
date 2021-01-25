@@ -89,7 +89,7 @@ _Tools : Python, Tensorflow, Keras, sklearn, Tensorflow_datasets, Tensorflow.js,
 
 ### Sentiment Classifier
 
-**Notebook** : [beans_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Sentiment_Classifier/sentiment_classifier.ipynb)
+**Notebook** : [sentiment_classifier](https://github.com/jyotisman-ds/TensorFlow_projects/blob/main/Sentiment_Classifier/sentiment_classifier.ipynb)
 
 #### Model Demo
 
