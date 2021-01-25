@@ -111,9 +111,9 @@ stopwords = [ "a", "about", "above", "after", "again", "against", "all", "am", "
 
 - The TextVectorization layer more importantly also creates a Tokenizer of 10,000 most common words from the corpus in the training dataset. This layer also indexes these tokens which can then be used to vectorize the texts in all the splits. This layer can be used just as separate preprocessing step or also as a layer directly for the model given that it is inherited from the keras.layers class.
 
-- For word embeddings, we create a embedding layer as part of the model itself with 64 dimension embeddings to be learned during training.  
+- For word embeddings, we create an embedding layer as part of the model itself with 64 dimension embeddings to be learned during training.  
 
-- With a modest Conv1D and GlobalAveragePooling1D() layer, an accuracy of ~ 94% is achieved. One can further increase this with the inclusion of a TF-IDF vectorizer which accounts for the relative importance of words in the corpus. Or one can also look at some pre-trained word embeddings like [Glove](https://nlp.stanford.edu/projects/glove/).
+- With a modest Conv1D and GlobalAveragePooling1D() layer, an accuracy of ~ 94% is achieved. One can further increase this with the inclusion of a TF-IDF vectorizer which accounts for the relative importance of words in the corpus. Or one can also use some pre-trained word embeddings like [Glove](https://nlp.stanford.edu/projects/glove/). Other common preprocessing steps include stemming (focusing on the root words by cutting off their stems - e.g. study(-ing), like(-ly)), filtering of words based on their frequency of occurrence, etc. 
 
 - A straightforward next step would be to play with sequence layers cause after all texts are meaningful only if they have a sequential structure. One can add a few LSTM or GRU layers to check that. It probably wouldn't matter a lot for this task where a few positive or negative words will find a reliable mapping to the label. But for tasks like text generation, language translation where sequence learning is a core task, it's a must.    
 
