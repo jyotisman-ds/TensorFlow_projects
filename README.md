@@ -8,7 +8,7 @@
 - [Credits](#credits)
 
 ## General Overview
-This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast. Anyone interested in trying out these models in their local browser can do the following :
+This repo is a compilation of some of the deep learning projects that I worked on independently or as part of some training. This is by no means an exhaustive list. Its mostly for demonstration of the skills that I have acquired over the years as a learner and an enthusiast. Anyone interested in trying out these models in their local browser (apart from Sentiment Classifier) can do the following :
 
 1. Download the model folder you want to try.
 2. (only for Google Chrome)Add the [web server](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) for Chrome extension to Google Chrome.
