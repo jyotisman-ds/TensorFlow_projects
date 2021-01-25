@@ -101,7 +101,7 @@ The dataset is significantly huge with close to 600,000 training and around 40,0
 
 #### Technical Aspects
 
-- Data preprocessing included removing common 'stopwords' from all the splits. Other common preprocessing steps for text datasets were taken care of by the TextVectorization layer which limits the max_length of the reviews and also pads them whenever necessary.
+- Data preprocessing included removing common 'stopwords' from all the splits. The list shown below is taken from this [website](http://mlg.ucd.ie/datasets/bbc.html). Other common preprocessing steps for text datasets were taken care of by the TextVectorization layer which limits the max_length of the reviews and also pads them whenever necessary.
 
 ```python
 
