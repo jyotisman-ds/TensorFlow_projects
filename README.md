@@ -115,7 +115,7 @@ stopwords = [ "a", "about", "above", "after", "again", "against", "all", "am", "
 
 - With a modest Conv1D and GlobalAveragePooling1D() layer, an accuracy of ~ 94% is achieved. One can further increase this with the inclusion of a TF-IDF vectorizer which accounts for the relative importance of words in the corpus. Or one can also look at some pre-trained word embeddings like [Glove](https://nlp.stanford.edu/projects/glove/).
 
-- A straightforward next step would be to play with sequence layers cause after all texts are meaningful only if they have a sequential structure. One can add a few LSTM or GRU layers to check that. It probably wouldn't matter a lot for this task where few words positive/negative words can map to the label. But for tasks like text generation, language translation, it's a must.    
+- A straightforward next step would be to play with sequence layers cause after all texts are meaningful only if they have a sequential structure. One can add a few LSTM or GRU layers to check that. It probably wouldn't matter a lot for this task where a few positive or negative words will find a reliable mapping to the label. But for tasks like text generation, language translation where sequence learning is a core task, it's a must.    
 
 ## Credits
 A huge shoutout to the Deep Learning coursera community especially their [Deep Learning](https://www.coursera.org/specializations/deep-learning) and Tensorflow [training](https://www.coursera.org/professional-certificates/tensorflow-in-practice) and [deployment](https://www.coursera.org/specializations/tensorflow-data-and-deployment) specialization courses.
